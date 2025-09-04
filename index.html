@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maksym Bushchuk — WordPress Developer</title>
+  <meta name="description" content="Portfolio of Maksym Bushchuk — WordPress developer crafting fast, secure, neon‑styled web experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <canvas id="gridfx" aria-hidden="true"></canvas>
+
+  <header class="xbar">
+    <a class="brand" href="#home">
+      <span>Maksym<span class="accent">.dev</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="chip">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="frame">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1><span class="neon">WordPress</span> developer</h1>
+        <p>I design and ship custom themes, WooCommerce builds, and performance‑first experiences. Clean PHP, tight CSS, fast TTFB.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">View work</a>
+          <a class="btn ghost" href="Maksym_Bushchuk_CV.pdf" download>Download CV</a>
+        </div>
+        <ul class="badges">
+          <li>WooCommerce</li><li>Hooks/Filters</li><li>SEO</li><li>OpenCart → WP</li><li>NGINX</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/maksym_bushchuk.jpg" alt="Maksym Bushchuk" />
+        <h2 class="name">Maksym Bushchuk</h2>
+      </div>
+      <div class="hero-card">
+        <div class="glow"></div>
+        <div class="kpi">
+          <div><b>40%+</b><span>faster pages</span></div>
+          <div><b>20+</b><span>WP launches</span></div>
+          <div><b>3 yrs</b><span>hands‑on</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="segment">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p class="muted">Handpicked builds and experiments. Each piece ships with performance budgets and audits.</p>
+      </div>
+
+      <div class="grid worklist">
+        <article class="tile">
+          <a class="tile-a" href="evadem.chmnu.edu.ua" target="_blank" rel="noopener">
+            <div class="tile-media">
+              <div class="ring"></div>
+              <img src="assets/evadem.jpg" alt="Vitano B2B Portal preview" loading="lazy">
+            </div>
+            <div class="tile-body">
+              <h3>Evadem - International project</h3>
+              <p>Responsive multi-page site with clean design, SEO-ready structure, fast load speed, and mobile-friendly layout.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
+            </div>
+          </a>
+        </article>
+
+        <article class="tile">
+          <a class="tile-a" href="https://helpzsu.mk.ua" target="_blank" rel="noopener">
+            <div class="tile-media">
+              <div class="ring ring-rose"></div>
+              <img src="assets/help_zsu_mk.jpg" alt="Help ZSU MK website" loading="lazy">
+            </div>
+            <div class="tile-body">
+              <h3>Help ZSU MK</h3>
+              <p>Military-themed site, donation modules, partner acknowledgments, and content management for volunteer updates.</p>
+              <ul class="tags"><li>Volunteering</li><li>Performance</li><li>WP</li></ul>
+            </div>
+          </a>
+        </article>
+
+        <article class="tile">
+          <a class="tile-a" href="chmnu.edu.ua" target="_blank" rel="noopener">
+            <div class="tile-media">
+              <div class="ring ring-lime"></div>
+              <img src="assets/chmnu.jpg" alt="University site upgrade" loading="lazy">
+            </div>
+            <div class="tile-body">
+              <h3>University Platform</h3>
+              <p>Refactor of legacy theme, Laravel companion app, SSH deploys, MySQL tuning, 504 mitigation.</p>
+              <ul class="tags"><li>WP</li></ul>
+            </div>
+          </a>
+        </article>
+
+        <article class="tile">
+          <a class="tile-a" href="new.chmnu.edu.ua" target="_blank" rel="noopener">
+            <div class="tile-media">
+              <div class="ring ring-lime"></div>
+              <img src="assets/new.chmnu.jpg" alt="New University site" loading="lazy">
+            </div>
+            <div class="tile-body">
+              <h3>University site</h3>
+              <p>Laravel-based educational portal with multilingual pages, custom modules, and performance improvements. Contributed to development and optimization.</p>
+              <ul class="tags"><li>Laravel</li></ul>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="segment alt">
+      <div class="section-head">
+        <h2>Stack</h2>
+        <p class="muted">Tools I actually use in production.</p>
+      </div>
+      <ul class="stack">
+        <li>WordPress core, custom themes & plugins</li>
+        <li>WooCommerce: checkout flows, pricing rules, catalog sync</li>
+        <li>PHP (OOP), Composer basics, WP‑CLI</li>
+        <li>MySQL/MariaDB, query budgets</li>
+        <li>HTML/CSS (Grid, clamp, container queries), modern JS</li>
+        <li>Nginx/Apache, caching layers (OPcache, FastCGI, Redis)</li>
+        <li>SEO: semantic structure, internal linking, schema</li>
+        <li>Polylang / WPML / GTranslate</li>
+      </ul>
+    </section>
+
+    <section id="about" class="segment">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">Based in Mykolaiv. I like clean code, small PRs, and shipping early.</p>
+      </div>
+      <div class="about">
+        <div>
+          <p>I build reliable WordPress systems: consistent naming, small reusable parts, native APIs. My focus is on measurable improvements — speed, conversions, maintainability.</p>
+          <p>Comfortable collaborating async with designers and backend teams. I maintain high standards for accessibility and performance budgets.</p>
+        </div>
+        <ul class="metrics">
+          <li><b>90+</b><span>Lighthouse Perf</span></li>
+          <li><b><200ms</b><span>TTFB targets</span></li>
+          <li><b>30d</b><span>avg. delivery</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="segment alt">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Available for freelance and collaboration.</p>
+      </div>
+      <div class="contact">
+        <a class="btn primary" href="mailto:maks.bushchuk@gmail.com">Email</a>
+        <a class="btn" href="https://t.me/makssx_20" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn" href="https://www.linkedin.com/in/max-bushchuk-133158260/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/MaksBushchuk443" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Maksym Bushchuk</p>
+  </footer>
+</body>
+</html>
