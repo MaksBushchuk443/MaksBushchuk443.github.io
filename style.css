@@ -129,7 +129,7 @@ body{
 .tile{border:1px solid rgba(118,228,247,.2);border-radius:16px;overflow:hidden;background:rgba(7,10,18,.5);backdrop-filter:blur(6px);box-shadow:0 10px 40px rgba(0,0,0,.3)}
 .tile-a{display:block;color:inherit;text-decoration:none}
 .tile-media{position:relative;aspect-ratio:16/10;background:#0b0f1e;overflow:hidden}
-.tile-media img{width:100%;height:100%;object-fit:cover;opacity:.95;mix-blend:screen;filter:saturate(1.15) brightness(.98)}
+.tile-media img{width:100%;height:100%;object-fit:cover;opacity:.95;}
 .ring{position:absolute;inset:auto auto 10px 10px;width:72px;height:72px;border-radius:50%;border:2px solid var(--n2);filter:drop-shadow(0 0 16px var(--n2))}
 .ring-rose{border-color:#ff74c8;filter:drop-shadow(0 0 16px #ff74c8)}
 .ring-lime{border-color:#6dffb3;filter:drop-shadow(0 0 16px #6dffb3)}
