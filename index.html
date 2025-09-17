@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maksym Bushchuk — WordPress Developer</title>
-  <meta name="description" content="Portfolio of Maksym Bushchuk — WordPress developer crafting fast, secure, neon‑styled web experiences.">
+  <meta name="description">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -13,14 +13,15 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <canvas id="gridfx" aria-hidden="true"></canvas>
+    <div class="fx-bg" aria-hidden="true"></div>
+
 
   <header class="xbar">
     <a class="brand" href="#home">
       <span>Maksym<span class="accent">.dev</span></span>
     </a>
     <nav class="nav">
-      <a href="#work">Work</a>
+      <a href="#work">Works</a>
       <a href="#stack">Stack</a>
       <a href="#about">About</a>
       <a href="#contact" class="chip">Contact</a>
@@ -37,7 +38,7 @@
           <a class="btn ghost" href="Maksym_Bushchuk_CV.pdf" download>Download CV</a>
         </div>
         <ul class="badges">
-          <li>WooCommerce</li><li>Hooks/Filters</li><li>SEO</li><li>OpenCart → WP</li><li>NGINX</li>
+          <li>HTML5/CSS3</li><li>JavaScript/jQuery</li><li>PHP</li><li>MySQL/MariaDB</li><li>REST API/AJAX</li><li>WooCommerce</li><li>SEO (Yoast)</li>
         </ul>
       </div>
       <div class="hero-photo">
@@ -47,9 +48,10 @@
       <div class="hero-card">
         <div class="glow"></div>
         <div class="kpi">
-          <div><b>40%+</b><span>faster pages</span></div>
-          <div><b>20+</b><span>WP launches</span></div>
-          <div><b>3 yrs</b><span>hands‑on</span></div>
+          <div><b>90%+</b><span>Page speed</span></div>
+          <div><b>4</b><span>Official sites</span></div>
+          <div><b>10+</b><span>Not official sites</span></div>
+          <div><b>2 yrs</b><span>hands‑on</span></div>
         </div>
       </div>
     </section>
@@ -65,11 +67,11 @@
           <a class="tile-a" href="evadem.chmnu.edu.ua" target="_blank" rel="noopener">
             <div class="tile-media">
               <div class="ring"></div>
-              <img src="assets/evadem.jpg" alt="Vitano B2B Portal preview" loading="lazy">
+              <img src="assets/evadem.jpg" alt="International project" loading="lazy">
             </div>
             <div class="tile-body">
               <h3>Evadem - International project</h3>
-              <p>Responsive multi-page site with clean design, SEO-ready structure, fast load speed, and mobile-friendly layout.</p>
+              <p>An international project from the university, written on a clean, blank topic.</p>
               <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
             </div>
           </a>
@@ -83,8 +85,8 @@
             </div>
             <div class="tile-body">
               <h3>Help ZSU MK</h3>
-              <p>Military-themed site, donation modules, partner acknowledgments, and content management for volunteer updates.</p>
-              <ul class="tags"><li>Volunteering</li><li>Performance</li><li>WP</li></ul>
+              <p>Military-themed site, used the NoveLite child theme, edited the code, set up SEO, and used various plugins to improve.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
             </div>
           </a>
         </article>
@@ -96,9 +98,9 @@
               <img src="assets/chmnu.jpg" alt="University site upgrade" loading="lazy">
             </div>
             <div class="tile-body">
-              <h3>University Platform</h3>
-              <p>Refactor of legacy theme, Laravel companion app, SSH deploys, MySQL tuning, 504 mitigation.</p>
-              <ul class="tags"><li>WP</li></ul>
+              <h3>University site old</h3>
+              <p>Administered and customized the official website of Petro Mohyla Black Sea National University: theme customization, content management, plugin setup.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
             </div>
           </a>
         </article>
@@ -111,8 +113,8 @@
             </div>
             <div class="tile-body">
               <h3>University site</h3>
-              <p>Laravel-based educational portal with multilingual pages, custom modules, and performance improvements. Contributed to development and optimization.</p>
-              <ul class="tags"><li>Laravel</li></ul>
+              <p>Contributed to the development of the new Petro Mohyla Black Sea National University website (Laravel): improved the search functionality, fixed and optimized code, styled frontend elements, and enhanced content structure for better usability and performance.</p>
+              <ul class="tags"><li>Laravel</li><li>PHP</li><li>CSS3</li><li>SearchFunctionality</li></ul>
             </div>
           </a>
         </article>
@@ -125,14 +127,16 @@
         <p class="muted">Tools I actually use in production.</p>
       </div>
       <ul class="stack">
-        <li>WordPress core, custom themes & plugins</li>
-        <li>WooCommerce: checkout flows, pricing rules, catalog sync</li>
-        <li>PHP (OOP), Composer basics, WP‑CLI</li>
-        <li>MySQL/MariaDB, query budgets</li>
-        <li>HTML/CSS (Grid, clamp, container queries), modern JS</li>
-        <li>Nginx/Apache, caching layers (OPcache, FastCGI, Redis)</li>
-        <li>SEO: semantic structure, internal linking, schema</li>
-        <li>Polylang / WPML / GTranslate</li>
+         <li>WordPress core — custom themes, plugins, WP-CLI</li>
+         <li>WooCommerce — checkout flows, pricing rules, catalog sync</li>
+         <li>PHP (OOP), Composer basics</li>
+         <li>MySQL/MariaDB — query optimization, indexing</li>
+         <li>HTML5/CSS3 — Grid, Flexbox, clamp(), container queries</li>
+         <li>JavaScript (ES6+), jQuery</li>
+         <li>Nginx / Apache — caching layers (OPcache, FastCGI, Redis)</li>
+         <li>SEO — semantic structure, internal linking, schema.org</li>
+         <li>Multilingual — Polylang, WPML, GTranslate</li>
+         <li>Git / GitHub — version control & deployment</li>
       </ul>
     </section>
 
@@ -147,9 +151,10 @@
           <p>Comfortable collaborating async with designers and backend teams. I maintain high standards for accessibility and performance budgets.</p>
         </div>
         <ul class="metrics">
-          <li><b>90+</b><span>Lighthouse Perf</span></li>
-          <li><b><200ms</b><span>TTFB targets</span></li>
-          <li><b>30d</b><span>avg. delivery</span></li>
+          <li><span>Fast & optimized websites</span></li>
+          <li><span>E-commerce with WooCommerce</span></li>
+          <li><span>Custom themes & design tweaks</span></li>
+          <li><span>Secure & reliable setup</span></li>
         </ul>
       </div>
     </section>

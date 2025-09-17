@@ -28,3 +28,37 @@ function loop(){
   requestAnimationFrame(loop);
 }
 loop();
+
+function setHeaderVar(){
+  const bar = document.querySelector('.xbar');
+  if(!bar) return;
+  const h = bar.getBoundingClientRect().height;
+  document.documentElement.style.setProperty('--header-h', `${Math.round(h)}px`);
+}
+setHeaderVar();
+addEventListener('resize', setHeaderVar);
+
+
+const supportsSmooth = 'scrollBehavior' in document.documentElement.style;
+if(!supportsSmooth){
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id = a.getAttribute('href');
+      if(!id || id === '#') return;
+      const el = document.querySelector(id);
+      if(!el) return;
+      e.preventDefault();
+      const header = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h'))||0;
+      const y = el.getBoundingClientRect().top + window.pageYOffset - header - 12;
+      const start = window.pageYOffset, dist = y - start, dur = 500;
+      let t0=null;
+      requestAnimationFrame(function step(ts){
+        if(!t0) t0 = ts;
+        const p = Math.min(1, (ts - t0)/dur);           
+        const ease = 0.5 - Math.cos(Math.PI*p)/2;       
+        window.scrollTo(0, start + dist*ease);
+        if(p<1) requestAnimationFrame(step);
+      });
+    });
+  });
+}
